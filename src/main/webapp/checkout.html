@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pojo</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-theme.css" rel="stylesheet">
+    <!-- The required Stripe lib -->
+</head>
+<body>
+
+<!-- default pay button -->
+<!-- <form action="http://localhost:8080/payments/makepayment" method="POST" id="payment-form">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_DZ1zw63Pcqfwk6vfxTSUFY3S"
+    data-amount="2000"
+    data-name="Demo Site"
+    data-description="2 widgets ($20.00)"
+    data-image="/128x128.png">
+  </script>
+</form> -->
+
+<h3>Charge with Checkout</h3>
+<form action="http://localhost:8080/payments/makepaymentandsaveuser" method="POST" id="payment-form">
+    <div><input name="amount" value="2000" readonly="readonly"></div>
+    <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_DZ1zw63Pcqfwk6vfxTSUFY3S"
+            data-amount="2000"
+            data-email="test456@gmail.com"
+            data-name="Career Bootcamp"
+            data-description="sample bootcamp ($20.00)"
+            data-image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVLMtUmTw0oaNDeCp1XxUUhg69qTBT1i-1AG4rCDNmqggf-KVm"
+            data-panel-label="Pay amount = "
+            data-label="Pay to get started >>">
+    </script>
+</form>
+
+<h3>Charge $10 to saved user with Stripe</h3>
+<form action="http://localhost:8080/payments/makepaymentofcustomer" method="POST" id="payment-form2">
+    <div class="form-row">
+        <label>
+            <span>Email</span>
+            <input type="text" size="50" id="email" name="email" value="test456@gmail.com"/>
+        </label>
+    </div>
+
+    <div class="form-row">
+        <label>
+            <span>Amount</span>
+            <input type="number" size="10" id="amount" name="amount" value="10" readonly="readonly" />
+        </label>
+    </div>
+    <button type="submit">Submit Payment</button>
+</form>
+
+
+</body>
+</html>
+
+
+
+

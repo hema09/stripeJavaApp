@@ -1,0 +1,3 @@
+com\test\stripe\Controller.class
+com\test\stripe\CORSFilter.class
+com\test\stripe\PaymentService.class

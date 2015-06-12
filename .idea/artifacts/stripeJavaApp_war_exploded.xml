@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="stripeJavaApp:war exploded">
+    <output-path>$PROJECT_DIR$/target/stripeJavaApp-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="stripeJavaApp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="stripeJavaApp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.stripe:stripe-java:1.31.0" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.2.4" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-servlet:1.17" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-server:1.17" />
+          <element id="library" level="project" name="Maven: asm:asm:3.1" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.17" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:3.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:3.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:3.2.6.RELEASE" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
